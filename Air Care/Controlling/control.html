@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Smart Controlling</title>
+    <link rel="shortcut icon" href="../Home Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="control.css">
+</head>
+<body>
+    <nav class="bg-transparent p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="../Home Assets/logo.png" alt="Logo" class="h-10">
+                <span style=" text-shadow: 1px 1px 2px whitesmoke;" class="text-white text-xl font-bold"> Air Care</span>
+            </div>
+            <div class="flex-grow flex justify-center">
+                <ul class="flex space-x-8 text-white">
+                    <li><a href="../home.html" class="hover:underline">About Project</a></li>
+                    <li><a href="../Issues Sol/issues.html" class="hover:underline">Issues & Solutions</a></li>
+                </ul>
+            </div>
+            <ul class="hidden md:flex space-x-6 text-white">
+                <li><a href="../Monitoring/monitor.html" class="hover:underline">Remote Monitoring</a></li>
+                <li><a href="./control.html" class="hover:underline">Smart Congtrol</a></li>
+            </ul>
+            <button id="menu-btn" class="md:hidden text-white text-2xl">&#9776;</button>
+        </div>
+        <ul id="mobile-menu" class="hidden flex flex-col items-center bg-transparent text-white md:hidden">
+            <li><a href="../home.html" class="py-2">About Project</a></li>
+            <li><a href="../Issues Sol/issues.html" class="py-2">Issues & Solutions</a></li>
+            <li><a href="../Monitoring/monitor.html" class="py-2">Remote Monitoring</a></li>
+            <li><a href="./control.html" class="py-2">Smart Control</a></li>
+        </ul>
+    </nav>
+       
+
+    <div id="power-btn">
+        <img src="./Assets/btn.png" alt="Power button">
+    </div>
+
+
+
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>      
+
+
+
+</body>
+</html>
+
+
+

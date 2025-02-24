@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Issues & Reasons</title>
+    <link rel="shortcut icon" href="../Home Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="issues.css">
+</head>
+<body>
+    <nav class="bg-transparent p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="../Home Assets/logo.png" alt="Logo" class="h-10">
+                <span style="text-shadow: 1px 1px 2px" class="text-white text-xl font-bold"> Air Care</span>
+            </div>
+            <div class="flex-grow flex justify-center">
+                <ul class="flex space-x-8 text-white">
+                    <li><a href="../home.html" class="hover:underline">About Project</a></li>
+                    <li><a href="./issues.html" class="hover:underline">Issues & Solutions</a></li>
+                </ul>
+            </div>
+            <ul class="hidden md:flex space-x-6 text-white">
+                <li><a href="../Monitoring/monitor.html" class="hover:underline">Login</a></li>
+                <li><a href="../Monitoring/monitor.html" class="hover:underline">Sign Up</a></li>
+            </ul>
+            <button id="menu-btn" class="md:hidden text-white text-2xl">&#9776;</button>
+        </div>
+        <ul id="mobile-menu" class="hidden flex flex-col items-center bg-transparent text-white md:hidden">
+            <li><a href="./home.html" class="py-2">About Project</a></li>
+            <li><a href="../home.html" class="py-2">Issues & Solutions</a></li>
+            <li><a href="../Monitoring/monitor.html" class="py-2">Login</a></li>
+            <li><a href="../Monitoring/monitor.html" class="py-2">Sign Up</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="issue-sec">
+        <h1 id="issue-title">Air-Conditioner Issues & Thier Possible Reasons</h1>
+    </div>
+
+    <div id="issueSol">
+
+        <div class="issues">
+            <h1>High Temperature</h1>
+            <ul>
+                <li>Faulty compressor</li>
+                <li>Dirty coils</li>
+            </ul>
+        </div>
+
+        <div class="issues">
+            <h1>Voltage/Frequency Fluctuation</h1>
+            <ul>
+                <li>Grid instability</li>
+                <li>Faulty wiring</li>
+            </ul>
+        </div>
+
+        <div class="issues">
+            <h1>High Humidity</h1>
+            <ul>
+                <li>Clogged drain </li>
+                <li>Low airflow</li>
+            </ul> 
+        </div>
+
+        <div class="issues">
+            <h1>Excess Dust</h1>
+            <ul>
+                <li>Dirty filters</li>
+                <li>Poor ventilation</li>
+            </ul>
+            
+        </div>
+        <div class="issues">
+            <h1>Abnormal Blower RPM</h1>
+            <ul>
+                <li>Motor issue</li>
+                <li>Capacitor failure</li>
+            </ul>
+        </div>
+
+        <div class="issues">
+            <h1>Excess Vibration</h1>
+            <ul>
+                <li>Loose parts</li>
+                <li>Unbalanced blower</li>
+            </ul>
+        </div>
+
+        <div class="issues">
+            <h1>Coil Freezing</h1>
+            <ul>
+                <li>Low refrigerant</li>
+                <li>Airflow blockage</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
